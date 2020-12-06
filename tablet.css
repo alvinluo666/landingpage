@@ -1,0 +1,131 @@
+@media (max-width:768px) and (min-width:426px){
+
+    header{
+        padding:0px 40px;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    header .logo{
+        width: 100%;
+        padding:30px 0px
+    }
+    header .logo i#menu{
+        display: inline;
+    }
+    header.expand .logo i#menu{
+        display: none;
+    }
+    header.expand .logo i#cross{
+        display: inline;
+    }
+    header .nav .indicator{
+        display: none;
+    }
+    header .nav{
+        width: 100%;
+        /* padding-top:20px; */
+        height: 0px;
+    }
+    header .nav ul{
+        flex-direction: column;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: 0.3s all;
+    }
+    header.expand .nav ul{
+        height: 200px;
+    }
+    header.expand .nav{
+        height: 200px;
+    }
+    header .invite{
+        display: none;
+    }
+    header .nav ul li{
+        margin:10px;
+        font-size: 13px;
+    }
+    header .nav ul li.active{
+        animation:none;
+    }
+    section.first{
+        background:hsl(0, 100%, 100%) url('images/bg-intro-mobile.svg') no-repeat;
+        flex-direction: column-reverse;
+        padding:0px 0px 0px 0px;
+        justify-content: start;
+        align-items: center;
+        background-position: right;
+    }
+    section.first .content{
+        padding-right: 0px;
+        align-items: center;
+        padding:20px;
+    }
+    section.first .content h1{
+        font-size: 20px;
+        margin:20px 0px 5px 0px;
+        text-align: center;
+    }
+    section.first .content p{
+        font-size: 15px;
+        margin:5px 0px;
+        text-align: center;
+    }
+    section.first .content span{
+        width: 150px;
+        height: 50px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    section.first .img img{
+        width: 50%;
+    }
+    section.second{
+        padding:30px 40px 20px 40px;
+        height: auto;
+        box-sizing: border-box;
+        width: 100vw;
+    }
+    section.second .bottom{
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto;
+        grid-column-gap:20px;
+        grid-row-gap:40px;
+    }
+    section.second .top h3{
+        padding-bottom: 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+    section.second .top p{
+        width: 100%;
+        text-align: center;
+    }
+    section.third{
+        height: auto;
+        padding: 0px 40px 20px 40px;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    section.third .articles{
+        grid-template-columns: auto auto;
+        grid-column-gap:20px;
+        grid-row-gap:40px;
+    }
+    footer{
+        flex-direction: column;
+        height: auto;
+        padding:20px;
+    }
+    footer .link-one,footer .link-two{
+        align-items: center;
+    }
+    footer .invite{
+        width: 150px;
+        height: 30px;
+        font-size: 10px;
+    }
+}
